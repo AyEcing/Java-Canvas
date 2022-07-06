@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+    
+    defaultConfig {
+        applicationId "com.microsoft.emmx"
+        minSdkVersion 23
+        targetSdkVersion 28
+        versionCode 1314
+        versionName "1.5栀子"
+        externalNativeBuild {
+            ndkBuild {
+                cppFlags "-std=c++14"
+            }
+        }
+    }
+    externalNativeBuild {
+        ndkBuild {
+            path file('src/main/jni/Android.mk')
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    signingConfigs {
+        config {
+            storeFile file('/sdcard/AppProjects/ay.keystore')
+            storePassword ''
+            keyPassword ''
+            keyAlias ''
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            //最小化混淆
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources true
+            
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config//签名文件release和debug保存一致
+        }
+    }
+    //编译出错时继续
+    lintOptions {
+          abortOnError false
+     }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+}

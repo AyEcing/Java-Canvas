@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:id="@+id/activityTheme">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="280dp"
+			android:gravity="bottom|center_horizontal">
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/activitymainLinearLayoutBC">
+
+				<ImageView
+					android:src="@drawable/ic_launcher_round"
+					android:layout_width="80dp"
+					android:layout_height="80dp"
+					android:id="@+id/activitymainImageViewTX"/>
+
+			</LinearLayout>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Alice"
+				android:layout_marginTop="10dp"
+				android:textSize="15sp"
+				android:textStyle="bold"
+				android:typeface="monospace"
+				android:textColor="#FFFFFFFF"
+				android:shadowColor="#FFFF0000"
+				android:shadowRadius="0.7"
+				android:layout_marginBottom="15dp"/>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:layout_marginLeft="40dp"
+				android:layout_marginRight="40dp"
+				android:gravity="center"
+				android:background="@drawable/edittext">
+
+				<EditText
+					android:fontFamily="@font/zt"
+					android:textColor="#FFFFFFFF"
+					android:layout_width="match_parent"
+					android:cursorVisible="true"
+					android:layout_height="wrap_content"
+					android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+					android:layout_weight="10"
+					android:background="#00000000"
+					android:hint="默认卡密 ay666"
+					android:textSize="13sp"
+					android:textColorHint="#D0FFFFFF"
+					android:layout_marginLeft="10dp"
+					android:lines="1"
+					android:singleLine="true"
+					android:id="@+id/activitymainEditTextKM"/>
+
+				<Button
+					android:fontFamily="@font/zt"
+					android:layout_width="100dp"
+					android:layout_height="wrap_content"
+					android:text="授权"
+					android:layout_weight="1"
+					android:background="#00000000"
+					android:textColor="#FFFFFFFF"
+					android:textSize="16sp"
+					android:typeface="sans"
+					android:textStyle="bold"
+					android:shadowRadius="0.3"
+					android:shadowColor="#FF10D9C6"
+					android:id="@+id/activitymainButtonDL"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.7">
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1.0">
+
+				<ScrollView
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:background="@drawable/announcement"
+					android:id="@+id/activitymainScrollViewGD"
+					android:layout_marginBottom="140dp"
+					android:layout_marginTop="20dp"
+					android:layout_marginLeft="20dp"
+					android:layout_marginRight="20dp">
+
+					<LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:padding="10dp">
+
+						<TextView
+							android:fontFamily="@font/zt"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="别看我只是一只羊!"
+							android:textSize="14sp"
+							android:textStyle="bold"
+							android:typeface="sans"
+							android:textColor="#FFFFFFFF"
+							android:shadowRadius="0.2"
+							android:shadowColor="#FF9F4E9A"
+							android:id="@+id/activitymainTextViewGG"/>
+
+					</LinearLayout>
+
+				</ScrollView>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:gravity="center">
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:layout_marginBottom="3dp">
+
+					<TextView
+						android:fontFamily="@font/zt"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="解绑卡密"
+						android:gravity="center"
+						android:layout_marginRight="5dp"
+						android:id="@+id/activitymainTextViewJB"
+						android:textColor="#FFFFFFFF"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="|"
+						android:gravity="center"
+						android:textColor="#FFFFFFFF"/>
+
+					<TextView
+						android:fontFamily="@font/zt"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="小灰机"
+						android:gravity="center"
+						android:layout_marginRight="5dp"
+						android:id="@+id/activitymainTextViewXHJ"
+						android:textColor="#FFFFFFFF"
+						android:layout_marginLeft="5dp"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="|"
+						android:gravity="center"
+						android:textColor="#FFFFFFFF"/>
+
+					<TextView
+						android:fontFamily="@font/zt"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="查询卡密"
+						android:gravity="center"
+						android:layout_marginLeft="5dp"
+						android:id="@+id/activitymainTextViewxCX"
+						android:textColor="#FFFFFFFF"/>
+
+				</LinearLayout>
+
+				<TextView
+					android:fontFamily="@font/zt"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="You're a dream I'll never forget ."
+					android:textSize="10sp"
+					android:gravity="center"
+					android:textColor="#FF371212"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

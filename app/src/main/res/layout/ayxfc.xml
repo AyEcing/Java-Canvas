@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="250dp"
+		android:layout_height="250dp"
+		android:background="@drawable/xfc"
+		android:id="@+id/AYxfcLinearLayout">
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="50dp">
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_weight="1.0"
+				android:gravity="center">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:text="绘制"
+					android:gravity="center"
+					android:fontFamily="@font/zt"
+					android:textColor="#FFFFFFFF"
+					android:textSize="13sp"
+					android:layout_marginLeft="10dp"
+					android:id="@+id/AYxfcTextView1"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_weight="1.0">
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_weight="2"
+					android:gravity="center">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:text="功能"
+						android:gravity="center"
+						android:textSize="13sp"
+						android:fontFamily="@font/zt"
+						android:textColor="#FFFFFFFF"
+						android:id="@+id/AYxfcTextView2"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_weight="1.0"
+					android:gravity="center"
+					android:id="@+id/AYxfcLinearLayout1">
+
+					<ImageView
+						android:src="@drawable/tue"
+						android:layout_width="20dp"
+						android:layout_height="20dp"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="#FFDEEBDB"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"/>
+
+		<RelativeLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/AYxfcLinearLayoutHZ"
+				android:visibility="visible">
+
+				<ScrollView
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<LinearLayout
+						android:orientation="vertical"
+						android:layout_width="250dp"
+						android:layout_height="match_parent">
+
+						<CheckBox
+							android:layout_width="250dp"
+							android:layout_height="15dp"
+							android:text="注入绘制"
+							android:visibility="invisible"
+							android:fontFamily="@font/zt"
+							android:textColor="#FFFFFFFF"/>
+
+						<LinearLayout
+							android:orientation="horizontal"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"/>
+
+						<LinearLayout
+							android:orientation="horizontal"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<LinearLayout
+								android:orientation="vertical"
+								android:layout_width="wrap_content"
+								android:layout_height="match_parent"
+								android:layout_weight="2"
+								android:gravity="center_vertical">
+
+								<CheckBox
+									android:theme="@style/MyCheckBox"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:text="注入绘制"
+									android:layout_marginLeft="25dp"
+									android:fontFamily="@font/zt"
+									android:textColor="#FFFFFFFF"
+									android:id="@+id/AYxfcCheckBox1"/>
+
+								<CheckBox
+									android:theme="@style/MyCheckBox"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:text="方框"
+									android:layout_marginLeft="25dp"
+									android:layout_marginTop="10dp"
+									android:fontFamily="@font/zt"
+									android:textColor="#FFFFFFFF"
+									android:id="@+id/AYxfcCheckBox2"/>
+
+								<CheckBox
+									android:theme="@style/MyCheckBox"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:text="信息"
+									android:layout_marginLeft="25dp"
+									android:fontFamily="@font/zt"
+									android:textColor="#FFFFFFFF"
+									android:id="@+id/AYxfcCheckBox3"/>
+
+							</LinearLayout>
+
+							<LinearLayout
+								android:orientation="vertical"
+								android:layout_width="wrap_content"
+								android:layout_height="match_parent"
+								android:layout_weight="3"
+								android:gravity="center_vertical">
+
+								<CheckBox
+									android:theme="@style/MyCheckBox"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:layout_marginLeft="25dp"
+									android:visibility="invisible"/>
+
+								<CheckBox
+									android:theme="@style/MyCheckBox"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:fontFamily="@font/zt"
+									android:textColor="#FFFFFFFF"
+									android:text="射线"
+									android:layout_marginLeft="25dp"
+									android:layout_marginTop="10dp"
+									android:id="@+id/AYxfcCheckBox4"/>
+
+								<CheckBox
+									android:theme="@style/MyCheckBox"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:fontFamily="@font/zt"
+									android:textColor="#FFFFFFFF"
+									android:layout_marginLeft="25dp"
+									android:visibility="invisible"/>
+
+							</LinearLayout>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:orientation="vertical"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="绘制强度"
+								android:textColor="#FFFFFFFF"
+								android:layout_marginLeft="25dp"
+								android:layout_marginTop="15dp"/>
+
+							<SeekBar
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_marginLeft="15dp"
+								android:layout_marginRight="15dp"
+								android:max="1500"
+								android:splitTrack="false"
+								android:progressDrawable="@drawable/barbc"
+								android:id="@+id/AYxfcSeekBar"
+								android:layout_marginTop="10dp"/>
+
+						</LinearLayout>
+
+					</LinearLayout>
+
+				</ScrollView>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/AYxfcLinearLayoutGN"
+				android:visibility="gone">
+
+				<ScrollView
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<LinearLayout
+						android:orientation="vertical"
+						android:layout_width="250dp"
+						android:layout_height="match_parent">
+
+						<CheckBox
+							android:theme="@style/MyCheckBox"
+							android:layout_width="250dp"
+							android:layout_height="15dp"
+							android:text="注入绘制"
+							android:fontFamily="@font/zt"
+							android:textColor="#FFFFFFFF"
+							android:visibility="invisible"/>
+
+						<LinearLayout
+							android:orientation="horizontal"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+							<LinearLayout
+								android:orientation="vertical"
+								android:layout_width="wrap_content"
+								android:layout_height="match_parent"
+								android:layout_weight="2"
+								android:gravity="center_vertical">
+
+								<RadioButton
+									android:theme="@style/MyCheckBox"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:layout_marginLeft="25dp"
+									android:text="自瞄"
+									android:fontFamily="@font/zt"
+									android:textColor="#FFFFFFFF"
+									android:id="@+id/ayxfcRadioButton1"/>
+
+								<RadioButton
+									android:theme="@style/MyCheckBox"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:layout_marginLeft="25dp"
+									android:text="子追"
+									android:fontFamily="@font/zt"
+									android:textColor="#FFFFFFFF"
+									android:id="@+id/ayxfcRadioButton2"/>
+
+								<CheckBox
+									android:theme="@style/MyCheckBox"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:text="无后"
+									android:fontFamily="@font/zt"
+									android:textColor="#FFFFFFFF"
+									android:layout_marginLeft="25dp"
+									android:visibility="visible"/>
+
+							</LinearLayout>
+
+							<LinearLayout
+								android:orientation="vertical"
+								android:layout_width="wrap_content"
+								android:layout_height="match_parent"
+								android:layout_weight="3"
+								android:gravity="center_vertical">
+
+								<CheckBox
+									android:theme="@style/MyCheckBox"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:text="范围"
+									android:fontFamily="@font/zt"
+									android:textColor="#FFFFFFFF"
+									android:layout_marginLeft="25dp"/>
+
+								<CheckBox
+									android:theme="@style/MyCheckBox"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:layout_marginLeft="25dp"
+									android:visibility="visible"
+									android:fontFamily="@font/zt"
+									android:textColor="#FFFFFFFF"
+									android:text="翻滚"/>
+
+								<CheckBox
+									android:theme="@style/MyCheckBox"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:text="聚点"
+									android:layout_marginLeft="25dp"
+									android:fontFamily="@font/zt"
+									android:textColor="#FFFFFFFF"
+									android:visibility="visible"/>
+
+							</LinearLayout>
+
+						</LinearLayout>
+
+					</LinearLayout>
+
+				</ScrollView>
+
+			</LinearLayout>
+
+		</RelativeLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#FF000000"
+	android:gravity="center">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="400dp"
+		android:gravity="center">
+
+		<TextView
+			android:fontFamily="@font/zt"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="阿夜还是很帅滴"
+			android:textSize="30sp"
+			android:layout_marginTop="45dp"
+			android:shadowRadius="0.1"
+			android:shadowColor="#FF3EFF00"
+			android:textColor="#FFFFFFFF"
+			android:id="@+id/PremissTextView0"
+			android:visibility="visible"/>
+
+		<TextView
+			android:fontFamily="@font/zt"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="阿夜还是很帅滴"
+			android:textSize="30sp"
+			android:layout_marginTop="45dp"
+			android:shadowRadius="0.1"
+			android:shadowColor="#FF3EFF00"
+			android:textColor="#FFFFFFFF"
+			android:id="@+id/PremissTextView1"
+			android:visibility="visible"/>
+
+		<TextView
+			android:fontFamily="@font/zt"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="阿夜还是很帅滴"
+			android:textSize="30sp"
+			android:layout_marginTop="45dp"
+			android:shadowRadius="0.1"
+			android:shadowColor="#FF3EFF00"
+			android:textColor="#FFFFFFFF"
+			android:id="@+id/PremissTextView2"
+			android:visibility="visible"/>
+
+		<TextView
+			android:fontFamily="@font/zt"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="阿夜还是很帅滴"
+			android:textSize="30sp"
+			android:layout_marginTop="45dp"
+			android:shadowRadius="0.1"
+			android:shadowColor="#FF3EFF00"
+			android:textColor="#FFFFFFFF"
+			android:id="@+id/PremissTextView3"
+			android:visibility="visible"/>
+
+		<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:padding="10dp"
+			android:id="@+id/PremissScrollView"
+			android:visibility="gone">
+
+			<TextView
+				android:shadowRadius="0.1"
+				android:shadowColor="#FF3EFF00"
+				android:fontFamily="@font/zt"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Text"
+				android:layout_margin="10dp"
+				android:textSize="14sp"
+				android:textColor="#FFFFFFFF"
+				android:id="@+id/PremissTextView4"
+				android:paddingTop="100dp"/>
+
+		</ScrollView>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_weight="1.0"
+			android:gravity="center">
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:gravity="center"
+				android:background="#FF00FF1F"
+				android:layout_marginTop="5dp"
+				android:layout_marginBottom="25dp"
+				android:id="@+id/PremissLinearLayout1">
+
+				<TextView
+					android:fontFamily="@font/zt"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:text="悬浮窗权限"
+					android:gravity="center"
+					android:layout_margin="0.5dp"
+					android:background="#FF000000"
+					android:textSize="15sp"
+					android:textColor="#FFFFFFFF"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:gravity="center"
+				android:background="#FF00FF1F"
+				android:layout_marginTop="25dp"
+				android:layout_marginBottom="25dp"
+				android:id="@+id/PremissLinearLayout2">
+
+				<TextView
+					android:fontFamily="@font/zt"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:text="储存权限"
+					android:gravity="center"
+					android:layout_margin="0.5dp"
+					android:background="#FF000000"
+					android:textSize="15sp"
+					android:textColor="#FFFFFFFF"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:gravity="center"
+				android:background="#FF00FF1F"
+				android:layout_marginTop="25dp"
+				android:layout_marginBottom="25dp"
+				android:id="@+id/PremissLinearLayout3">
+
+				<TextView
+					android:fontFamily="@font/zt"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:text="设备信息"
+					android:gravity="center"
+					android:layout_margin="0.5dp"
+					android:background="#FF000000"
+					android:textSize="15sp"
+					android:textColor="#FFFFFFFF"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:gravity="center"
+				android:background="#FFFFF100"
+				android:layout_marginTop="25dp"
+				android:layout_marginBottom="25dp"
+				android:id="@+id/PremissLinearLayout4">
+
+				<TextView
+					android:fontFamily="@font/zt"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:text="软件设置"
+					android:gravity="center"
+					android:layout_margin="0.5dp"
+					android:background="#FF000000"
+					android:textSize="15sp"
+					android:textColor="#FFFFFFFF"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:gravity="center">
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="60dp"
+				android:layout_height="60dp"
+				android:gravity="center">
+
+				<ImageView
+					android:src="@drawable/ic_launcher"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/PremissImageView1"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+
